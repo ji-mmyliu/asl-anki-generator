@@ -1,0 +1,5 @@
+cached-property==1.5.2
+chevron==0.14.0
+frozendict==2.3.8
+genanki==0.13.0
+PyYAML==6.0
