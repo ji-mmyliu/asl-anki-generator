@@ -2,3 +2,5 @@ words.json
 asl_vocabulary.apkg
 videos/
 venv/
+app/__pycache__
+__pycache__

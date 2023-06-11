@@ -4,8 +4,9 @@ import json
 
 WORD_LIST = "words.json"
 
-my_deck, video_files = generate_deck(WORD_LIST)
+deck_config = json.load(open(WORD_LIST, 'r'))
+my_deck, video_files = generate_deck(deck_config)
 
 my_package = genanki.Package(my_deck)
 my_package.media_files = video_files
-my_package.write_to_file(json.load(open(WORD_LIST, 'r'))['export_filename'])
+my_package.write_to_file(deck_config['export_filename'])
