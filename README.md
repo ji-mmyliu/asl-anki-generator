@@ -20,4 +20,4 @@ python3 -m pip install -r requirements.txt
 python3 main.py
 ```
 
-Enjoy! Feel free to [submit an issue](https://github.com/ji-mmyliu/asl-anki-generator/issues) for any concerns or inquiries.
+Enjoy! Feel free to [submit an issue](https://github.com/ji-mmyliu/asl-anki-generator/issues/new) for any concerns or inquiries.
