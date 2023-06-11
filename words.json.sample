@@ -1,0 +1,8 @@
+{
+    "name": "My ASL Deck",
+    "export_filename": "asl_vocabulary.apkg",
+    "words": [
+        "hello",
+        "goodbye"
+    ]
+}
