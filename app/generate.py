@@ -7,13 +7,13 @@ from .util import download_sign_video
 
 def generate_note(word: str) -> genanki.Note:
     my_note = genanki.Note(
-        model=asl_card_model,
-        fields=[word[0].upper() + word[1:], '', f'[sound:{word}.mp4]']
+        model=genanki.BASIC_MODEL,
+        fields=[word[0].upper() + word[1:], f'[sound:{word}.mp4]']
     )
     return my_note
 
 """
-Returns a generated deck based on the JSON file provided in src_json AND a list of strings indicaing the file names of videos
+Returns a generated deck based on the configuration in deck_config AND a list of strings indicaing the file names of videos
 """
 def generate_deck(deck_config: any) -> typing.Tuple[genanki.Deck, typing.List[str]]:
     deck_name = deck_config['name']
