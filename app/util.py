@@ -17,7 +17,7 @@ def download_sign_video(word: str, force_redownload=False) -> str:
     filename = f'videos/{word}.mp4'
 
     if not force_redownload and os.path.isfile(filename):
-        logging.warning(f"Sign video \"{filename}\" has been previously downloaded; skipping.")
+        logging.info(f"Sign video \"{filename}\" has been previously downloaded; skipping.")
         return filename # Video is already downloaded
 
     logging.info(f"Downloading {filename}...")
