@@ -21,3 +21,7 @@ python3 main.py
 ```
 
 Enjoy! Feel free to [submit an issue](https://github.com/ji-mmyliu/asl-anki-generator/issues/new) for any concerns or inquiries.
+
+#### Credits
+* Uses kerrickstaley's [genanki](https://github.com/kerrickstaley/genanki) python library
+* Uses the [handspeak](https://www.handspeak.com/) ASL dictionary for signs
