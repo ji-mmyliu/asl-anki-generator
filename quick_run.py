@@ -1,4 +1,8 @@
-from app.generate import generate_deck
+"""
+Quickly generate single Anki ASL deck. Prepare the configuration at 'words.json' before running.
+"""
+
+from aslankigen.generate import generate_deck
 import genanki
 import json
 import logging

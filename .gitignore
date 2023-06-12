@@ -5,3 +5,4 @@ videos/
 venv/
 app/__pycache__
 __pycache__
+exports/
