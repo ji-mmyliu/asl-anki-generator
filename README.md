@@ -1,5 +1,5 @@
 # ASL Anki Flashcard Deck Generator
-Give us a list of words, we'll give you an Anki flashcard deck with the word as a question and a video of the sign as the answer. We'll even find the video for you!
+Give it a list of words, it'll give you an Anki flashcard deck with the word as a question and a video of the sign as the answer. It'll even find the video for you!
 
 ## Usage
 1. First clone the repository and enter the folder:
