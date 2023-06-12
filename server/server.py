@@ -10,8 +10,7 @@ import uuid
 from aslankigen.generate import generate_deck
 from aslankigen.models import WordsConfig
 
-app = FastAPI()
-app.mount("/exports", StaticFiles(directory="exports"), name="anki_package_exports")
+from . import app
 
 @app.post("/generate-deck")
 async def generate_asl_anki_package(deck_config: WordsConfig, request: Request):
