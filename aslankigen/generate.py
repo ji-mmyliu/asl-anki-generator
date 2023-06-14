@@ -15,7 +15,7 @@ def generate_note(word: str) -> genanki.Note:
 """
 Returns a generated deck based on the configuration in deck_config AND a list of strings indicaing the file names of videos
 """
-def generate_deck(deck_config: any) -> typing.Tuple[genanki.Deck, typing.List[str]]:
+def generate_deck(deck_config: any) -> typing.Tuple[genanki.Deck, typing.List[str], int]:
     deck_name = deck_config['name']
 
     my_deck = genanki.Deck(
@@ -23,6 +23,7 @@ def generate_deck(deck_config: any) -> typing.Tuple[genanki.Deck, typing.List[st
         deck_name)
     
     video_files = []
+    failures = 0
     
     for word in deck_config['words']:
         # Download answer sign video
@@ -30,6 +31,7 @@ def generate_deck(deck_config: any) -> typing.Tuple[genanki.Deck, typing.List[st
 
         # Check if word exists
         if not video_file:
+            failures += 1
             continue
 
         # Generate Anki flashcard
@@ -38,4 +40,4 @@ def generate_deck(deck_config: any) -> typing.Tuple[genanki.Deck, typing.List[st
         # Add video file location to list
         video_files.append(video_file)
     
-    return (my_deck, video_files)
+    return (my_deck, video_files, failures)
